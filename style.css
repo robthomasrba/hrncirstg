@@ -1,0 +1,2915 @@
+/*
+Theme Name: HRNCIR Construction
+Version: 1.0
+Description: HRNCIR Construction - Building Spaces for People
+Author URI: https://dudeagency.io/
+Theme URI: https://dudeagency.io/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*	@font-face kit by Fonts2u (https://fonts2u.com)
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family:"Socialico";
+  src:url("fonts/Socialico.eot?") format("eot"),url("fonts/Socialico.woff") format("woff"),url("fonts/Socialico.ttf") format("truetype"),url("fonts/Socialico.svg#Socialico") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+/*	01. Document Setup
+/* -------------------------------------------------------------------------- */
+body {
+  background: #ebebeb;
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+}
+
+/*	02. Navigation
+/* -------------------------------------------------------------------------- */
+#main-navigation > .navbar {
+	background-color: #000000;
+}
+
+.navbar {
+  border: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+.navbar-nav li {
+  text-align: center;
+}
+
+.navbar-nav li a {
+	color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav li.active > a {
+  border-bottom: 2px solid #ebc435 !important;
+  color: #fff !important;
+}
+
+.main-menu-contact a {
+  color: #ebc435 !important;
+}
+
+/*	03. Home - Hero
+/* -------------------------------------------------------------------------- */
+#home-hero .hero-description,
+#projects-hero .hero-description {
+  background: #000;
+}
+
+#home-hero .hero-description h2,
+#projects-hero .hero-description h2 {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#home-hero .hero-description h2 {
+  border-bottom: 0px;
+}
+
+#home-hero .hero-description-cta,
+#projects-hero .hero-description-cta {
+  background: url('images/p-bg.gif') top left no-repeat;
+  font-family: 'Aleo', serif;
+}
+
+#home-hero .hero-description-cta p,
+#projects-hero .hero-description-cta p {
+  color: #fff;
+}
+
+/* 04. Home - Main Services
+ --------------------------------------------------*/
+#main-services {
+  background: #ebebeb;
+  color: #000;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.contact-wrapper,
+.contact-wrapper #main-projects {
+  padding-bottom: 0 !important;
+}
+
+#main-services h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main-services h3 {
+  text-transform: uppercase;
+}
+
+#main-services p {
+  font-family: 'Aleo', serif;
+}
+
+#main-services .icons {
+  background: #ebc435;
+  border-radius: 90px;
+  display: inline-block;
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
+  width: 76px;
+}
+
+#main-services .icons img {
+  width: 46px;
+}
+
+#main-services .main-service-contents {
+  display: inline-block;
+}
+
+#main-services .stripes,
+#what-we-do-wrapper .stripes {
+  background: url('images/stripe-pattern.png') no-repeat;
+  height: 63px;
+  width: 350px;
+  position: absolute;
+  right: 0;
+  top: -31px;
+}
+
+.home-intro-service p {
+  text-align: left !important;
+}
+
+/*	05. Home - Projects
+/* -------------------------------------------------------------------------- */
+#home-projects {
+}
+
+#home-projects button,
+.what-we-do-gallery button {
+  display: block;
+  margin: 0 auto;
+  clear: both;
+}
+
+.what-we-do-gallery button {
+}
+
+#home-projects .home-projects-01 {
+  background-image: url('images/home-projects-stir-restaurant.jpg');
+}
+
+#home-projects .home-projects-02 {
+  background-image: url('images/home-projects-charter-roofstock.jpg');
+}
+
+#home-projects .home-projects-03 {
+  background-image: url('images/home-projects-esrp.jpg');
+}
+
+#home-projects .home-projects-01,
+#home-projects .home-projects-02,
+#home-projects .home-projects-03,
+#single-project-gallery .single-project-gallery-images,
+.what-we-do-gallery .single-project-gallery-images {
+  background-position: center center;
+  background-size: cover;
+}
+
+#home-projects .home-projects-description,
+#single-project-gallery .home-projects-description,
+.what-we-do-gallery .home-projects-description {
+  background: #000;
+  float: right;
+  position: absolute;
+}
+
+.what-we-do-gallery-alternate .home-projects-description {
+  float: left;
+}
+
+#home-projects .home-projects-description h2,
+#single-project-gallery .home-projects-description h2,
+.what-we-do-gallery .home-projects-description h2 {
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 8px;
+  margin: 0 !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.what-we-do-gallery .home-projects-description ul {
+  color: #fff;
+  display: flow-root;
+}
+
+.what-we-do-gallery .home-projects-description ul li {
+  float: left;
+  list-style-type: disc;
+  width: 50%;
+}
+
+.what-we-do-gallery .home-projects-description ul li::marker {
+  color: #eac335;
+}
+
+#home-projects .home-projects-description-cta,
+.what-we-do-gallery .home-projects-description-cta {
+  background: none;
+  font-family: 'Aleo', serif;
+  padding: 30px 0;
+}
+
+.what-we-do-gallery .home-projects-description-cta {
+  padding: 0;
+}
+
+#home-projects .project-slider-navigation,
+#single-project-gallery .project-slider-navigation,
+.what-we-do-gallery .project-slider-navigation {
+  bottom: -54px;
+  position: absolute;
+  right: 0;
+}
+
+.what-we-do-gallery-alternate .project-slider-navigation {
+  bottom: -54px;
+  position: absolute;
+  left: 0;
+}
+
+#home-projects .project-slider-navigation .next,
+#single-project-gallery .project-slider-navigation .next,
+.what-we-do-gallery .project-slider-navigation .next {
+  background: #ebc435;
+}
+
+#home-projects .project-slider-navigation .prev,
+#single-project-gallery .project-slider-navigation .prev,
+.what-we-do-gallery .project-slider-navigation .prev {
+  background: #000;
+}
+
+#home-projects .project-slider-navigation .next,
+#home-projects .project-slider-navigation .prev,
+#single-project-gallery .project-slider-navigation .next,
+#single-project-gallery .project-slider-navigation .prev,
+.what-we-do-gallery .project-slider-navigation .next,
+.what-we-do-gallery .project-slider-navigation .prev {
+  cursor: pointer;
+  float: left;
+  height: 54px;
+  line-height: 54px;
+  overflow: auto;
+  text-align: center;
+  width: 54px;
+}
+
+#home-projects .project-slider-navigation .next img,
+#home-projects .project-slider-navigation .prev img,
+#single-project-gallery .project-slider-navigation .next img,
+#single-project-gallery .project-slider-navigation .prev img,
+.what-we-do-gallery .project-slider-navigation .next img,
+.what-we-do-gallery .project-slider-navigation .prev img {
+  height: 25px;
+}
+
+#home-projects .slick-active,
+#single-project-gallery .slick-active,
+.what-we-do-gallery .slick-active {
+  opacity: 1 !important;
+}
+
+#home-projects .slick-slide,
+#single-project-gallery .slick-slide,
+.what-we-do-gallery .slick-slide {
+  opacity: .6;
+  outline: none
+}
+
+.slick-slide h2 {
+  display: none;
+}
+
+/*	06. General items
+/* -------------------------------------------------------------------------- */
+#get-in-touch button,
+.h-dark button,
+#home-hero button,
+#home-projects button,
+#projects-hero button,
+.what-we-do-gallery button {
+  background: #000;
+  border: 2px solid #ebc435;
+  color: #ebc435;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+}
+
+.home-links-slider:hover {
+  text-decoration: none !important;
+}
+
+/* 07. Get in Touch
+/* -------------------------------------------------------------------------- */
+#get-in-touch {
+  background: url('images/h-yellow-pattern.png');
+  position: relative;
+}
+
+.h-dark {
+  position: relative;
+}
+
+#get-in-touch .get-in-touch-description,
+.h-dark .get-in-touch-description {
+  background: #000;
+  padding: 32px;
+  z-index: 1;
+}
+
+#get-in-touch .get-in-touch-description h2,
+.h-dark .get-in-touch-description h2 {
+  color: #fff;
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+
+#get-in-touch .get-in-touch-description-cta,
+.h-dark .get-in-touch-description-cta {
+  background: url('images/p-bg.gif') top left no-repeat;
+  font-family: 'Aleo', serif;
+}
+
+#get-in-touch .get-in-touch-description-cta p,
+.h-dark .get-in-touch-description-cta p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 2.2em;
+}
+
+.h-dark .get-in-touch-description-cta p span {
+  color: #ebc435;
+  text-transform: uppercase;
+}
+
+/* 08. Footer
+/* -------------------------------------------------------------------------- */
+#footer {
+	background: #000;
+	color: #fff;
+  padding-bottom: 68px;
+  padding-top: 68px;
+}
+div#footer button.shutter-in-horizontal a {color: #f3c300;}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer h4,
+#footer h4 a {
+  color: #ebc435;
+}
+
+#footer .logo-footer {
+  margin-bottom: 40px;
+}
+
+#footer .footer-address {
+  font-family: 'Aleo', serif;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+#footer .footer-address span {
+  color: #ebc435;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#footer button {
+  background: #000;
+  border: 2px solid #ebc435;
+  color: #ebc435;
+  padding: 12px 18px !important;
+  text-transform: uppercase;
+}
+
+#footer .copyright {
+  color: #8b8b8b;
+  font-family: 'Aleo', serif;
+  line-height: 54px;
+}
+
+#footer .footer-navigation {
+  text-align: center;
+}
+
+#footer .footer-navigation h4 {
+  text-transform: uppercase;
+}
+
+#footer .social-media {
+  text-align: right;
+}
+
+#footer .social-media div {
+  border: 2px solid #eac335;
+  border-radius: 90px;
+  display: inline-block;
+  height: 48px;
+  text-align: center;
+  width: 48px;
+}
+
+#footer .social-media div:before {
+  font-family: 'Socialico';
+  font-size: 28px;
+  line-height: 44px;
+}
+
+#footer .instagram {
+  position: relative;
+  height: 48px;
+  line-height: 48px;
+}
+
+#footer .instagram img {
+  margin-top: -10px;
+}
+
+#footer .social-media div.facebook:before{
+  color: #eac335;
+  content: "\0046"
+}
+
+#footer .social-media div.linked-in:before{
+  color: #eac335;
+  content: "\0049"
+}
+
+.social-media-blog-post {
+  margin-bottom: 40px;
+}
+
+.social-media-blog-post .share-post {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.social-media-blog-post .facebook,
+.social-media-blog-post .linked-in,
+.social-media-blog-post .twitter {
+  border: 2px solid #eac335;
+  border-radius: 90px;
+  display: inline-block;
+  height: 48px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 48px;
+}
+
+
+.social-media-blog-post .facebook span,
+.social-media-blog-post .linked-in span,
+.social-media-blog-post .twitter span {
+  display: none;
+}
+
+.social-media-blog-post .twitter {
+  margin-right: 0px;
+}
+
+.social-media-blog-post .facebook:before,
+.social-media-blog-post .linked-in:before,
+.social-media-blog-post .twitter:before {
+  font-family: 'Socialico';
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.social-media-blog-post .facebook:before{
+  color: #eac335;
+  content: "\0046"
+}
+
+.social-media-blog-post .linked-in:before{
+  color: #eac335;
+  content: "\0049"
+}
+
+.social-media-blog-post .twitter:before{
+  color: #eac335;
+  content: "\0074"
+}
+
+/* 09. Projects
+ --------------------------------------------------*/
+#main-projects {
+  background: #ebebeb;
+  color: #000;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+#main-projects h2,
+.hrncir-descriptions h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main-projects h4,
+.hrncir-descriptions h4 {
+  text-transform: uppercase;
+}
+
+#main-projects p,
+.hrncir-descriptions p {
+  font-family: 'Aleo', serif;
+  text-align: center;
+}
+
+#main-projects a.fancybox {
+  display: none;
+}
+
+#main-projects .projects-showcase-images {
+  cursor: pointer;
+}
+
+#main-projects .projects-showcase-wrapper {
+  margin-bottom: 52px;
+}
+
+#main-projects .projects-showcase-wrapper .projects-showcase-description {
+  background: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  padding: 36px 40px 30px 40px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#main-projects .projects-showcase-wrapper .projects-showcase-description h6 {
+  font-weight: bold;
+}
+
+#main-projects .projects-showcase-wrapper .projects-showcase-description h6 a {
+  color: #fff;
+  letter-spacing: 6px;
+}
+
+#main-projects .projects-showcase-wrapper .projects-showcase-description h6 a:hover {
+  color: #ebc435;
+}
+
+#main-projects .projects-showcase-wrapper .projects-showcase-images .projects-images {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-projects .stripes,
+#what-we-do-wrapper .stripes {
+  background: url('images/stripe-pattern.png') no-repeat;
+  height: 63px;
+  width: 350px;
+  position: absolute;
+  left: 0;
+  top: -31px;
+}
+
+#main-projects .projects-nav li a {
+  cursor: pointer;
+}
+
+/* 11. Who We Are
+------------------------------------------------------------------------------*/
+.h-dark {
+  background: url('images/h-dark-pattern.png') repeat;
+}
+
+.our-values-img {
+  background-position: center center !important;
+  background-size: 110% !important;
+}
+
+#testimonials-slider {
+  background: #ebebeb;
+  margin: 0;
+}
+
+#testimonials-slider .testimonial-single {
+  width: 570px;
+}
+
+#testimonials-slider .testimonial-single .testimonial-logo {
+  padding: 20px 0;
+}
+
+#testimonials-slider .testimonial-single .testimonial-logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+#testimonials-slider .testimonial-single .testimonial-wrapper {
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+#testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-description {
+  font-family: 'Aleo', serif;
+}
+
+#testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-gap {
+  height: 10px;
+}
+
+#testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-quotes img {
+  display: block;
+  margin: 0 auto;
+}
+
+#testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-who {
+  background: url(images/p-bg.gif) top left no-repeat;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.testimonial-slider-navigation {
+  position: absolute;
+  right: 0;
+}
+
+.testimonial-slider-navigation .testimonial-next {
+  background: #ebc435;
+}
+
+.testimonial-slider-navigation .testimonial-prev {
+  background: #000;
+}
+
+.testimonial-slider-navigation .testimonial-next,
+.testimonial-slider-navigation .testimonial-prev {
+  cursor: pointer;
+  float: left;
+  overflow: auto;
+}
+
+.testimonial-slider-navigation .testimonial-next img,
+.testimonial-slider-navigation .testimonial-prev img {
+  display: block;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videorow{
+  margin: 0px auto;
+}
+
+/* 13. Blog Posts
+------------------------------------------------------------------------------*/
+.blog-posts .container-fluid {
+  padding-top: 80px;
+}
+
+.sidebar-inside-posts {
+  margin-top: 40px;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper {
+  background-color: #fff;
+  border-top: 5px solid #f7ca51;
+  margin-top: 40px;
+  padding: 35px;
+}
+
+.single-blog-post-wrapper p,
+.blog-posts-wrapper p {
+  text-align: left !important;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .tags,
+.single-blog-post-wrapper .tags {
+  color: #ebc435;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .tags a,
+.single-blog-post-wrapper .tags a {
+  color: #ebc435;
+  font-weight: normal;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper h4,
+.single-blog-post-wrapper h4 {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.single-blog-post-wrapper h4 {
+  font-size: 36px;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper h4 a,
+.single-blog-post-wrapper h4 a {
+  color: #000;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more::before {
+  background: #eac335 !important;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more a {
+  color: #000 !important;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more {
+  background: #fff !important;
+  border: 2px solid #eac335;
+  color: #eac335 !important;
+  font-size: 18px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more a {
+  color: #000 !important;
+}
+
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more:hover a,
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more:focus a,
+.blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper .blog-read-more:active a {
+  color: #eac335 !important;
+}
+
+.widget_newsletterwidget {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  font-family: 'Aleo', serif;
+  list-style-type: none;
+  padding: 38px 34px;
+  text-align: center;
+}
+
+.widget_newsletterwidget h2 {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 38px !important;
+  margin-top: 0 !important;
+}
+
+.widget_newsletterwidget .tnp-widget {
+  margin-top: 36px;
+}
+
+.widget_newsletterwidget .tnp-widget .tnp-field-email label {
+  display: none;
+}
+
+.widget_newsletterwidget .tnp-widget .tnp-field-email input {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  padding: 14px 0;
+  text-align: center;
+}
+
+.widget_newsletterwidget .tnp-widget .tnp-field-email input::placeholder,
+.tnp-email::placeholder {
+  color: #ffffff !important;
+}
+
+.widget_newsletterwidget .tnp-widget .tnp-field-button .tnp-submit {
+  background-color: #000;
+  border: 2px solid #ebc435;
+  color: #ebc435;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  padding: 14px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h-dark-inside-blog-posts {
+  background: none !important;
+}
+
+.h-dark-inside-blog-posts h2 {
+  margin-bottom: 20px !important;
+  margin-top: 0px !important;
+  text-align: left !important;
+}
+
+.h-dark-inside-blog-posts a {
+  color: #ebc435 !important;
+  text-decoration: none;
+}
+
+.h-dark-inside-blog-posts a:hover,
+.h-dark-inside-blog-posts button:hover a {
+  color: #000 !important;
+}
+
+.fade-bottom-up-leaders .projects-showcase-description {
+  background-image: url('images/yellow-plus.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: right 20px center !important;
+}
+
+/* 14. Contact
+------------------------------------------------------------------------------*/
+.contact-icons {
+  background: #ebc435;
+  border-radius: 90px;
+  display: inline-block;
+  float: left;
+  height: 75px;
+  line-height: 70px;
+  margin-right: 42px;
+  text-align: center;
+  width: 75px;
+}
+
+.contact-types {
+  display: inline-block;
+  float: left;
+}
+
+.contact-types h6 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.contact-types a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wpcf7-text,
+.wpcf7-textarea {
+  background: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.wpcf7-textarea {
+  height: 90px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.wpcf7-text::placeholder,
+.wpcf7-textarea::placeholder {
+  color: #fff !important;
+}
+
+.wpcf7-submit {
+  border: 2px solid #ebc435;
+  background: #000 !important;
+  color: #ebc435;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.contact-form-hrncir {
+  padding-bottom: 0 !important;
+}
+
+.wpcf7-form p {
+  margin-bottom: 0 !important;
+}
+
+/* Animations
+------------------------------------------------------------------------------*/
+.fade-in {
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+		 -moz-transform: scale(0.9);
+			-ms-transform: scale(0.9);
+			 -o-transform: scale(0.9);
+					transform: scale(0.9);
+	-webkit-transition: all 1s ease-in-out;
+		 -moz-transition: all 1s ease-in-out;
+			-ms-transition: all 1s ease-in-out;
+			 -o-transition: all 1s ease-in-out;
+					transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	-webkit-transform: none;
+		 -moz-transform: none;
+			-ms-transform: none;
+			 -o-transform: none;
+					transform: none;
+}
+
+.fade-bottom-up,
+.fade-bottom-up-leadership,
+.fade-bottom-up-leaders {
+  opacity: 0;
+	-webkit-transform: translateY(40px);
+		 -moz-transform: translateY(40px);
+			-ms-transform: translateY(40px);
+			 -o-transform: translateY(40px);
+					transform: translateY(40px);
+	-webkit-transition: all 0.8s ease-out;
+		 -moz-transition: all 0.8s ease-out;
+			-ms-transition: all 0.8s ease-out;
+			 -o-transition: all 0.8s ease-out;
+					transition: all 0.8s ease-out;
+}
+
+.fade-bottom-up.visible,
+.fade-bottom-up-leadership.visible,
+.fade-bottom-up-leaders.visible {
+	opacity: 1;
+	-webkit-transform: none;
+		 -moz-transform: none;
+			-ms-transform: none;
+			 -o-transform: none;
+					transform: none;
+}
+
+.fade-left-to-right,
+.fade-left-to-right-footer,
+.fade-left-to-right-leaders {
+	opacity: 0;
+	-webkit-transform: translateX(-40px);
+		 -moz-transform: translateX(-40px);
+			-ms-transform: translateX(-40px);
+			 -o-transform: translateX(-40px);
+					transform: translateX(-40px);
+	-webkit-transition: all 0.8s ease-out;
+		 -moz-transition: all 0.8s ease-out;
+			-ms-transition: all 0.8s ease-out;
+			 -o-transition: all 0.8s ease-out;
+					transition: all 0.8s ease-out;
+}
+
+.fade-left-to-right.visible,
+.fade-left-to-right-footer.visible,
+.fade-left-to-right-leaders.visible {
+	opacity: 1;
+	-webkit-transform: none;
+		 -moz-transform: none;
+			-ms-transform: none;
+			 -o-transform: none;
+					transform: none;
+}
+
+.fade-right-to-left {
+	opacity: 0;
+	-webkit-transform: translateX(40px);
+		 -moz-transform: translateX(40px);
+			-ms-transform: translateX(40px);
+			 -o-transform: translateX(40px);
+					transform: translateX(40px);
+	-webkit-transition: all 0.8s ease-out;
+		 -moz-transition: all 0.8s ease-out;
+			-ms-transition: all 0.8s ease-out;
+			 -o-transition: all 0.8s ease-out;
+					transition: all 0.8s ease-out;
+}
+
+.fade-right-to-left.visible {
+	opacity: 1;
+	-webkit-transform: none;
+		 -moz-transform: none;
+			-ms-transform: none;
+			 -o-transform: none;
+					transform: none;
+}
+
+.project-fade-right-to-left {
+	opacity: 0;
+	-webkit-transform: translateX(40px);
+		 -moz-transform: translateX(40px);
+			-ms-transform: translateX(40px);
+			 -o-transform: translateX(40px);
+					transform: translateX(40px);
+	-webkit-transition: all 0.8s ease-out;
+		 -moz-transition: all 0.8s ease-out;
+			-ms-transition: all 0.8s ease-out;
+			 -o-transition: all 0.8s ease-out;
+					transition: all 0.8s ease-out;
+}
+
+.project-fade-right-to-left.visible {
+	opacity: 1;
+	-webkit-transform: none;
+		 -moz-transform: none;
+			-ms-transform: none;
+			 -o-transform: none;
+					transform: none;
+}
+
+.fade-bottom-up-leaders .projects-showcase-description {
+  cursor: pointer;
+}
+
+/* Shutter In Horizontal */
+.shutter-in-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #ebc435 !important;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.shutter-in-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.shutter-in-horizontal:hover,
+.shutter-in-horizontal:focus,
+.shutter-in-horizontal:active,
+.shutter-in-horizontal:hover a,
+.shutter-in-horizontal:focus a,
+.shutter-in-horizontal:active a {
+  color: #000 !important;
+}
+
+.shutter-in-horizontal:hover:before,
+.shutter-in-horizontal:focus:before,
+.shutter-in-horizontal:active:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.shutter-in-horizontal a {
+  color: #ebc435;
+  text-decoration: none;
+}
+
+div#testimonials-container {
+    padding: 100px 0px;
+}
+
+/* Media Queries: 767 Max
+ -----------------------------------------------------------------------------*/
+@media (max-width:767px)
+{
+  /* 02. Navigation */
+  .navbar-brand {
+    margin: 16px 0 16px 0;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+    width: 200px;
+  }
+
+  .navbar-nav li {
+  	margin-right: 0px;
+  }
+
+  .navbar-nav li a {
+  	font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 13px;
+  }
+
+  .navbar-toggler {
+    border: 1px solid #ebc435;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235,196,53,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .main-menu-contact a {
+    border: 2px solid #ebc435;
+    padding: 11px 18px !important;
+  }
+
+  /* 03. Home - Hero */
+  #home-hero,
+  #projects-hero {
+    background: #000;
+    background-image: none !important;
+  }
+
+  #home-hero .hero-description,
+  #projects-hero .hero-description {
+    border-bottom: 40px solid #000;
+    margin-top: 0px;
+    padding: 32px;
+  }
+
+  #home-hero .hero-description h2,
+  #projects-hero .hero-description h2 {
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin: 0 0 20px 0;
+  }
+
+  #home-hero .hero-description-cta,
+  #projects-hero .hero-description-cta {
+    padding: 20px 0 0 20px;
+  }
+
+  #home-hero .hero-description-cta p,
+  #projects-hero .hero-description-cta p {
+    font-size: 18px;
+    line-height: 1.9em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  #home-hero .img-fluid,
+  #projects-hero .img-fluid {
+    margin-top: 108px;
+  }
+
+  /* 04. Home - Main Services */
+  #main-services h2 {
+    font-size: 32px;
+    letter-spacing: 12px;
+    margin-bottom: 62px;
+    margin-top: 82px;
+  }
+
+  #main-services h3 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .blog-posts .container-fluid .blog-wrapper div.blog-posts-wrapper {
+    text-align: center;
+  }
+  #main-services p {
+    font-size: 16px;
+    line-height: 1.9em;
+    margin-bottom: 30px;
+    text-align: center !important;
+  }
+
+  #main-services .icons {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  #main-services .main-service-contents {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  /* 05. Home - Projects */
+  #home-projects,
+  #single-project-gallery,
+  .what-we-do-gallery {
+    min-height: 500px;
+    position: relative;
+  }
+
+  #home-projects .home-projects-01,
+  #home-projects .home-projects-02,
+  #home-projects .home-projects-03,
+  #single-project-gallery .single-project-gallery-images,
+  .what-we-do-gallery .single-project-gallery-images {
+    min-height: 600px;
+  }
+
+  #home-projects .home-projects-description,
+  #single-project-gallery .home-projects-description,
+  .what-we-do-gallery .home-projects-description {
+    right: 0px;
+    top: 0px;
+    padding: 18px;
+    width: 260px;
+    z-index: 1;
+  }
+
+  #home-projects .home-projects-description h2,
+  #single-project-gallery .home-projects-description h2,
+  .what-we-do-gallery .home-projects-description h2 {
+    font-size: 22px;
+    letter-spacing: 8px;
+    margin: 0 0 20px 0;
+  }
+
+  #home-projects .home-projects-description-cta {
+    padding: 20px 0 0 0px;
+  }
+  div#home-projects-slider .slick-list.draggable {padding-bottom: 0px !important;}
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .projects-images {
+    min-height: 500px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-description {
+    font-size: 18px;
+    margin-left: 27px;
+    top: -30px;
+  }
+
+  /* 07. Get in Touch */
+  #get-in-touch,
+  .h-dark {
+    min-height: 530px;
+  }
+
+  #get-in-touch .get-in-touch-description,
+  .h-dark .get-in-touch-description {
+    margin-top: 48px;
+  }
+
+  #get-in-touch .get-in-touch-description h2,
+  .h-dark .get-in-touch-description h2 {
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin: 0 0 30px 0;
+  }
+
+  #get-in-touch .get-in-touch-description-cta,
+  .h-dark .get-in-touch-description-cta {
+    padding: 30px 0 0 30px;
+  }
+
+  #get-in-touch .get-in-touch-description-cta p,
+  .h-dark .get-in-touch-description-cta p {
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  #get-in-touch .get-in-touch-hidden,
+  .h-dark .get-in-touch-hidden {
+    background: #000;
+    margin-bottom: 48px;
+    padding-bottom: 14px;
+  }
+
+  #get-in-touch .get-in-touch-img,
+  .h-dark .get-in-touch-img {
+    background: url('images/home-get-in-touch.jpg') center center;
+    display: none;
+    height: 442px;
+    position: absolute;
+    right: 48px;
+    top: 48px;
+    width: 784px;
+  }
+
+  #get-in-touch .get-in-touch-img-contact {
+    background: url('images/footer-contact.jpg') center center;
+    display: none;
+    height: 742px;
+    position: absolute;
+    right: 48px;
+    top: 48px;
+    width: 784px;
+  }
+
+  /* 08. Footer */
+  #footer button {
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 15px 20px;
+  }
+
+  #footer .footer-address {
+    font-family: 'Aleo', serif;
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+
+  #footer .footer-navigation h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  #footer .footer-navigation p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  #footer .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #footer .footer-quick-contact {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #footer .footer-quick-contact button {
+    margin: 0 auto;
+  }
+
+  #footer .social-media {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #footer .social-media div {
+    margin-right: 30px;
+  }
+
+  #footer h4 {
+    margin-top: 20px;
+  }
+
+  /* 09. Home - Main Services */
+  #main-projects h2,
+  .hrncir-descriptions h2 {
+    font-size: 26px;
+    letter-spacing: 8px;
+    margin-bottom: 62px;
+    margin-top: 30px;
+  }
+
+  #main-projects h4,
+  .hrncir-descriptions h4 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  #main-projects p,
+  .hrncir-descriptions p {
+    font-size: 16px;
+    line-height: 1.9em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* 09. Projects */
+  #main-projects #projects-nav,
+  #projects-nav,
+  #what-we-do-wrapper #projects-nav {
+    background: #ebc435;
+    float: left;
+    height: 63px;
+    margin-left: 0px;
+    position: relative;
+    top: -40px;
+  }
+
+  #main-projects .projects-nav,
+  .projects-nav,
+  #what-we-do-wrapper .projects-nav {
+    background: none;
+    top: 150px;
+  }
+
+  #main-projects .projects-nav ul,
+  #what-we-do-wrapper .projects-nav ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #main-projects .projects-nav li a,
+  .projects-nav li a,
+  #what-we-do-wrapper .projects-nav li a {
+    color: #000 !important;
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+  .navbar-nav li.active > a {
+    border-bottom: 2px solid #000000 !important;
+  }
+
+ /* #what-we-do-wrapper .projects-nav li:first-child {
+    border-bottom: 4px solid #000;
+    margin-left: -0px;
+  }*/
+
+  #main-projects .stripes,
+  #what-we-do-wrapper .stripes {
+    display: none;
+  }
+
+  /* 10. What We Do */
+  .read-more,
+  .read-more a {
+    color: #ebc435;
+  }
+
+  .what-we-do-gallery .home-projects-description {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .what-we-do-gallery .home-projects-description ul {
+    margin: 18px auto 28px auto;
+    width: 100%;
+  }
+
+  .what-we-do-gallery .home-projects-description-alternate {
+  }
+
+  #construction-description,
+  #scheduling-description,
+  #safety-description,
+  #cs-description {
+    background: #ebebeb;
+    padding-bottom: 60px;
+    padding-top: 20px;
+  }
+
+  #preconstruction-gallery,
+  #construction-gallery,
+  #scheduling-gallery,
+  #safety-gallery {
+    background: #ebebeb;
+    padding-left: 0;
+  }
+
+  #preconstruction-gallery .row {
+    margin-left: 0;
+  }
+
+  #construction-gallery .row {
+    margin-right: 0;
+  }
+
+  .what-we-do-gallery {
+    margin-left: 0px;
+  }
+
+  .what-we-do-gallery .home-projects-description {
+    margin-right: 0px;
+  }
+
+  .what-we-do-gallery-alternate .home-projects-description {
+    margin-left: 0px;
+  }
+
+  .what-we-do-gallery .slider-border-left {
+    display: none;
+  }
+
+  .what-we-do-gallery .slider-border-right {
+    display: none;
+  }
+
+  .scheduling-gallery,
+  .what-we-do-gallery-alternate {
+    padding-left: 15px;
+  }
+
+  .construction-gallery {
+    margin-right: -15px;
+  }
+
+  /* 11. Leaders */
+  .leaders-contents {
+    background: #000 !important;
+    color: #fff;
+  }
+
+  .leaders-contents h6 {
+    font-size: 36px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .leaders-contents .leaders-bio {
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-top: 20px;
+  }
+
+  .leaders-contents .leaders-title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .leaders-images {
+    min-height: 378px;
+  }
+
+  /* 12. Who We Are */
+  #testimonials-slider {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  #testimonials-slider {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  #testimonials-slider .slick-slide {
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    opacity: .4;
+    outline: none;
+    transform: scale(.8);
+    transition: all 600ms ease;
+  }
+
+  #testimonials-slider .slick-center {
+    -ms-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    outline: none;
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  #testimonials-slider .slick-center:focus,
+  #testimonials-slider .slick-slide {
+    outline: none;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-logo img {
+    height: 50px;
+    width: 80%;
+    object-fit: contain;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-description {
+    font-size: 12px;
+    padding: 10px 20px 0 20px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-quotes img {
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    padding: 20px 0 0px 0;
+    transform: scale(.6);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-who {
+    font-size: 14px;
+    margin: 20px 20px 10px 20px;
+    padding: 20px 0 10px 20px;
+  }
+
+  .testimonial-slider-navigation {
+    margin: 0 auto;
+    display: block;
+    width: 108px;
+    margin-top: -81px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-slider-navigation .testimonial-next,
+  .testimonial-slider-navigation .testimonial-prev {
+    height: 54px;
+    line-height: 54px;
+    width: 54px;
+  }
+
+  .testimonial-slider-navigation .testimonial-next img,
+  .testimonial-slider-navigation .testimonial-prev img {
+    height: 25px;
+    margin: 14px auto 0 auto;
+  }
+
+  .slick-list {
+    padding: 100px 0 150px 0 !important;
+  }
+
+  .fancybox-close-small {
+    border: 2px solid #eac335 !important;
+    border-radius: 90px !important;
+    margin: 20px !important;
+  }
+
+  .fancybox-close-small svg {
+    color: #eac335;
+  }
+
+  .fancybox-content {
+    overflow: auto !important;
+  }
+
+  .fancybox-content .col-lg-4 {
+    text-align: center;
+  }
+
+  .fancybox-content img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    margin: 0 auto;
+    transform: scale(1);
+    width: 80%;
+    right:0px;
+  }
+
+  .fancybox-content .projects-showcase-description {
+    margin-top: 0px;
+  }
+
+  /* 13. Contact */
+  .contact-icons {
+    margin-left: 40px;
+  }
+
+  .contact-types p {
+    text-align: left !important;
+  }
+	div#preconstruction-gallery-slider .slick-list.draggable {padding-bottom: 0px !important;}
+	div#construction-gallery-slider .slick-list.draggable {padding-bottom: 0px !important;}
+	div#scheduling-gallery-slider .slick-list.draggable {padding-bottom: 0px !important;}
+	div#safety-gallery-slider .slick-list.draggable {padding-bottom: 0px !important;}
+	#main-projects h2, .hrncir-descriptions h2 {margin-bottom: 30px !important;}
+	#testimonials-slider .testimonial-single .testimonial-wrapper {
+    	padding: 15px;
+	}
+	.contact-icons {margin: 0px auto;display: table !important;float: none;}
+	.contact-types {text-align: center;width: 100%;margin-top: 15px;}
+	.contact-wrapper h2 {margin-top: 70px !important;}
+	div#main-projects {
+	    padding-bottom: 0px;
+	}
+}
+
+/* Media Queries: 768 Breakpoint
+ -----------------------------------------------------------------------------*/
+@media (min-width:768px)
+{
+  /* 02. Navigation */
+  .navbar-brand {
+    margin: 16px 0 16px 0;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+    width: 200px;
+  }
+
+  .navbar-nav li {
+  	margin-right: 0px;
+  }
+
+  .navbar-nav li a {
+  	font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 13px;
+  }
+
+  .navbar-toggler {
+    border: 1px solid #ebc435;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235,196,53,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .main-menu-contact a {
+    border: 2px solid #ebc435;
+    padding: 11px 18px !important;
+  }
+
+  /* 03. Home - Hero */
+  #home-hero,
+  #projects-hero {
+    background: transparent;
+    background-position: 0 -350px;
+    background-size: 100%;
+    min-height: 800px;
+  }
+
+  #home-hero .hero-description,
+  #projects-hero .hero-description {
+    margin-top: 290px;
+    padding: 32px;
+  }
+
+  #home-hero .hero-description h2,
+  #projects-hero .hero-description h2 {
+    font-size: 48px;
+    letter-spacing: 12px;
+    margin: 0 0 20px 0;
+  }
+
+  #home-hero .hero-description-cta,
+  #projects-hero .hero-description-cta {
+    padding: 20px 0 0 20px;
+  }
+
+  #home-hero .hero-description-cta p,
+  #projects-hero .hero-description-cta p {
+    font-size: 18px;
+    line-height: 1.9em;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  /* 04. Home - Main Services */
+  #main-services h2 {
+    font-size: 32px;
+    letter-spacing: 8px;
+    margin-bottom: 62px;
+    margin-top: 82px;
+  }
+
+  #main-services h3 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  #main-services p {
+    font-size: 16px;
+    line-height: 1.9em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #main-services .icons {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  #main-services .main-service-contents {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  /* 05. Home - Projects */
+  #home-projects,
+  #single-project-gallery,
+  .what-we-do-gallery {
+    min-height: 500px;
+    position: relative;
+  }
+
+  #home-projects .home-projects-01,
+  #home-projects .home-projects-02,
+  #home-projects .home-projects-03,
+  #single-project-gallery .single-project-gallery-images,
+  .what-we-do-gallery .single-project-gallery-images {
+    min-height: 600px;
+  }
+
+  #home-projects .home-projects-description,
+  #single-project-gallery .home-projects-description,
+  .what-we-do-gallery .home-projects-description {
+    right: 100px;
+    top: 88px;
+    padding: 32px;
+    width: 460px;
+    z-index: 1;
+  }
+
+  .home-projects-description-alternate {
+    left: 100px;
+  }
+
+  .what-we-do-gallery .home-projects-description {
+    top: 188px;
+  }
+
+  .what-we-do-gallery .home-projects-description-alternate {
+    margin-left: 100px;
+  }
+
+  #home-projects .home-projects-description h2,
+  #single-project-gallery .home-projects-description h2,
+  .what-we-do-gallery .home-projects-description h2 {
+    font-size: 36px;
+    letter-spacing: 12px;
+    margin: 0 0 20px 0;
+  }
+
+  #home-projects .home-projects-description-cta {
+    padding: 20px 0 0 0px;
+  }
+
+  /* 07. Get in Touch */
+  #get-in-touch,
+  .h-dark {
+    min-height: 630px;
+  }
+
+  .get-in-touch-hrncir-cf {
+    min-height: 760px !important;
+  }
+
+  #get-in-touch .get-in-touch-description,
+  .h-dark .get-in-touch-description {
+    margin-top: 48px;
+  }
+
+  #get-in-touch .get-in-touch-description h2,
+  .h-dark .get-in-touch-description h2 {
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin: 0 0 30px 0;
+  }
+
+  #get-in-touch .get-in-touch-description-cta,
+  .h-dark .get-in-touch-description-cta {
+    padding: 30px 0 0 30px;
+  }
+
+  #get-in-touch .get-in-touch-description-cta p,
+  .h-dark .get-in-touch-description-cta p {
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  #get-in-touch .get-in-touch-hidden,
+  .h-dark .get-in-touch-hidden {
+    background: #000;
+    margin-bottom: 48px;
+    padding-bottom: 14px;
+  }
+
+  #get-in-touch .get-in-touch-img,
+  .h-dark .get-in-touch-img {
+    background: url('images/home-get-in-touch.jpg') center center;
+    display: none;
+    height: 542px;
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    width: 820px;
+  }
+
+  #get-in-touch .get-in-touch-img-contact {
+    background: url('images/footer-contact.jpg') center center;
+    display: none;
+    height: 642px;
+    position: absolute;
+    right: 48px;
+    top: 48px;
+    width: 784px;
+  }
+
+  /* 08. Footer */
+  #footer button {
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 15px 20px;
+  }
+
+  #footer .footer-address {
+    font-family: 'Aleo', serif;
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+
+  #footer .footer-navigation h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  #footer .footer-navigation p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  #footer .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #footer .social-media {
+    margin-top: 20px;
+  }
+
+  #footer .social-media div {
+    margin-right: 10px;
+  }
+
+  /* 09. Projects */
+  #main-projects #projects-nav,
+  #projects-nav,
+  #what-we-do-wrapper #projects-nav {
+    background: #ebc435;
+    float: left;
+    height: 63px;
+    margin-left: 0px;
+    position: relative;
+    top: -40px;
+  }
+
+  #main-projects .projects-nav,
+  .projects-nav,
+  #what-we-do-wrapper .projects-nav {
+    background: #ebebeb;
+    top: 150px;
+  }
+
+  #main-projects .projects-nav ul,
+  #what-we-do-wrapper .projects-nav ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #main-projects .projects-nav li a,
+  .projects-nav li a,
+  #what-we-do-wrapper .projects-nav li a {
+    color: #000 !important;
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  #main-projects .projects-nav li.active,
+  .projects-nav li.active,
+  #what-we-do-wrapper .projects-nav li.active {
+    border-bottom: 4px solid #000;
+    margin-left: -0px;
+  }
+
+  #main-projects .stripes,
+  #what-we-do-wrapper .stripes {
+    display: none;
+  }
+
+  #main-projects h2,
+  .hrncir-descriptions h2 {
+    font-size: 36px;
+    letter-spacing: 12px;
+    margin-bottom: 44px;
+    margin-top: 60px;
+  }
+
+  #main-projects h4,
+  .hrncir-descriptions h4 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  #main-projects p,
+  .hrncir-descriptions p {
+    font-size: 16px;
+    line-height: 1.9em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-description {
+    font-size: 18px;
+    margin-left: 27px;
+    top: -30px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .projects-images {
+    min-height: 400px;
+  }
+
+  /* 10. What We Do */
+  .read-more,
+  .read-more a {
+    color: #ebc435;
+  }
+
+  .what-we-do-gallery .home-projects-description {
+    width: 500px;
+  }
+
+  .what-we-do-gallery .home-projects-description ul {
+    margin: 18px auto 28px auto;
+    width: 90%;
+  }
+
+  .what-we-do-gallery .home-projects-description-alternate {
+    margin-left: 0px;
+  }
+
+  #construction-description,
+  #scheduling-description,
+  #safety-description,
+  #cs-description {
+    background: #ebebeb;
+    padding-bottom: 60px;
+    padding-top: 20px;
+  }
+
+  #preconstruction-gallery,
+  #construction-gallery,
+  #scheduling-gallery,
+  #safety-gallery {
+    background: #ebebeb;
+  }
+
+  #scheduling-gallery .row div:first-child,
+  #preconstruction-gallery .row div:first-child {
+    padding-left: 0;
+  }
+
+  #safety-gallery .row div:last-child,
+  #construction-gallery .row div:last-child {
+    padding-right: 0;
+  }
+
+  .what-we-do-gallery .home-projects-description {
+    margin-right: -100px;
+  }
+
+  .what-we-do-gallery-alternate .home-projects-description {
+    margin-left: -100px;
+  }
+
+  .what-we-do-gallery .slider-border-left {
+    background: #ebebeb;
+    float: left;
+    height: 600px;
+    position: relative;
+    width: 54px;
+  }
+
+  .what-we-do-gallery .slider-border-right {
+    background: #ebebeb;
+    float: right;
+    height: 600px;
+    position: relative;
+    width: 54px;
+  }
+
+  /* 11. Leaders */
+  .leaders-contents {
+    background: #000 !important;
+    color: #fff;
+  }
+
+  .leaders-contents h6 {
+    font-size: 36px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .leaders-contents .leaders-bio {
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-top: 20px;
+  }
+
+  .leaders-contents .leaders-title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .leaders-images {
+    min-height: 378px;
+  }
+
+  /* 12. Who We Are */
+  #testimonials-container {
+    position: relative;
+  }
+
+  #testimonials-slider {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  #testimonials-slider .slick-slide {
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    opacity: .4;
+    outline: none;
+    transform: scale(.8);
+    transition: all 600ms ease;
+  }
+
+  #testimonials-slider .slick-center {
+    -ms-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    outline: none;
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-logo img {
+    height: 20px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-description {
+    font-size: 12px;
+    padding: 10px 20px 0 20px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-quotes img {
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    padding: 20px 0 0px 0;
+    transform: scale(.6);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-who {
+    font-size: 14px;
+    margin: 20px 20px 10px 20px;
+    padding: 20px 0 10px 20px;
+  }
+
+  .testimonial-slider-navigation {
+    margin: 0 auto;
+    display: block;
+    width: 108px;
+   /* margin-top: -81px;*/
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+
+  .testimonial-slider-navigation .testimonial-next,
+  .testimonial-slider-navigation .testimonial-prev {
+    height: 54px;
+    line-height: 54px;
+    width: 54px;
+  }
+
+  .testimonial-slider-navigation .testimonial-next img,
+  .testimonial-slider-navigation .testimonial-prev img {
+    height: 25px;
+    margin: 14px auto 0 auto;
+  }
+
+  .slick-list {
+    padding: 50px 0 75px 0 !important;
+  }
+
+  #home-projects .slick-list {
+    padding: 0 !important;
+  }
+
+  .fancybox-close-small {
+    border: 2px solid #eac335 !important;
+    border-radius: 90px !important;
+    margin: 20px !important;
+  }
+
+  .fancybox-close-small svg {
+    color: #eac335;
+  }
+
+  .fancybox-content {
+    overflow: auto !important;
+  }
+
+  .fancybox-content .col-lg-4 {
+    text-align: center;
+  }
+
+  .fancybox-content img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    margin: 0 auto;
+    transform: scale(1);
+    width: 80%;
+  }
+
+  .fancybox-content .projects-showcase-description {
+    margin-top: 0px;
+  }
+
+  /* 13. Contact */
+  .contact-icons {
+    margin-left: 45px;
+    margin-right: 20px;
+  }
+
+  .contact-types p {
+    text-align: left !important;
+  }
+}
+
+/* Media Queries: 992 Breakpoint
+ -----------------------------------------------------------------------------*/
+@media (min-width:992px)
+{
+  /* 02. Navigation */
+  .navbar-nav li {
+  	margin-right: 20px;
+  }
+
+  /* 03. Home - Hero */
+  #home-hero .hero-description h2,
+  #projects-hero .hero-description h2 {
+    font-size: 40px;
+  }
+
+  /* 04. Home - Main Services */
+  #main-services h3 {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  #main-services p {
+    text-align: center;
+  }
+
+  .h-dark-inside-blog-posts p {
+    text-align: left !important;
+  }
+
+  #contact-person {
+    text-align: left !important;
+  }
+
+  #main-services .main-service-contents {
+    margin-left: 0px;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* 07. Get in Touch */
+  #get-in-touch .get-in-touch-description,
+  .h-dark .get-in-touch-description {
+    margin-top: 88px;
+  }
+
+  #get-in-touch .get-in-touch-img,
+  .h-dark .get-in-touch-img {
+    display: inherit;
+  }
+
+  #get-in-touch .get-in-touch-img-contact {
+    display: inherit;
+  }
+
+  /* 08. Footer */
+  #footer button {
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+
+  #footer .footer-address {
+    font-family: 'Aleo', serif;
+    font-size: 18px;
+    line-height: 2em;
+  }
+
+  #footer .footer-navigation h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  #footer .footer-navigation p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  #footer .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #footer .social-media {
+    margin-top: 20px;
+  }
+
+  #footer .social-media div {
+    margin-right: 30px;
+  }
+
+  .footer-navigation p a {
+    color: #fff !important;
+  }
+
+  /* 09. Projects */
+  #main-projects #projects-nav,
+  #projects-nav,
+  #what-we-do-wrapper #projects-nav {
+    background: #ebc435;
+    float: left;
+    height: 63px;
+    margin-left: 204px;
+    position: relative;
+    top: -40px;
+  }
+
+  #main-projects #projects-nav ul,
+  #projects-nav ul,
+  #what-we-do-wrapper #projects-nav ul {
+    margin: 0 auto;
+  }
+
+  #main-projects .stripes,
+  #what-we-do-wrapper .stripes {
+    display: block;
+    width: 220px;
+  }
+
+  #main-projects .projects-nav,
+  .projects-nav,
+  #what-we-do-wrapper .projects-nav {
+    background: none !important;
+    padding-right: 0px;
+    top: 150px;
+  }
+
+  #main-projects .projects-nav li a,
+  .projects-nav li a,
+  #what-we-do-wrapper .projects-nav li a {
+    color: #000 !important;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  #main-projects .projects-nav li.active,
+  .projects-nav li.active,
+  #what-we-do-wrapper .projects-nav li.active {
+    border-bottom: 4px solid #000;
+    margin-left: -0px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-description {
+    font-size: 18px;
+    margin-left: 27px;
+    top: -30px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-description h6 {
+    font-size: 32px;
+    letter-spacing: 10px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images {
+    margin-right: 32px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .projects-images {
+    min-height: 320px;
+  }
+
+  /* 10. What We Do */
+  .what-we-do-gallery .home-projects-description {
+    width: 600px;
+  }
+
+  .what-we-do-gallery .home-projects-description ul {
+    margin: 18px auto 28px auto;
+    width: 90%;
+  }
+
+  .what-we-do-gallery .home-projects-description-alternate {
+    margin-left: -100px;
+  }
+
+  /* 11. Leaders */
+  .leaders-contents {
+    background: #000 !important;
+    color: #fff;
+  }
+
+  .leaders-contents h6 {
+    font-size: 36px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .leaders-contents .leaders-bio {
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  .leaders-contents .leaders-title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .leaders-images {
+    min-height: 378px;
+  }
+
+  /* 12. Who We Are */
+  #testimonials-slider {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  #testimonials-slider .slick-slide {
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    opacity: .4;
+    outline: none;
+    transform: scale(.8);
+    transition: all 600ms ease;
+  }
+
+  #testimonials-slider .slick-center {
+    -ms-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    outline: none;
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-logo img {
+    height: 20px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-description {
+    font-size: 12px;
+    padding: 10px 20px 0 20px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-quotes img {
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    padding: 20px 0 0px 0;
+    transform: scale(.6);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-who {
+    font-size: 14px;
+    margin: 20px 20px 10px 20px;
+    padding: 20px 0 10px 20px;
+  }
+
+  .testimonial-slider-navigation {
+    margin: 0 auto;
+    display: block;
+    width: 108px;
+/*    margin-top: -81px;*/
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-slider-navigation .testimonial-next,
+  .testimonial-slider-navigation .testimonial-prev {
+    height: 54px;
+    line-height: 54px;
+    width: 54px;
+  }
+
+  .testimonial-slider-navigation .testimonial-next img,
+  .testimonial-slider-navigation .testimonial-prev img {
+    height: 25px;
+    margin: 14px auto 0 auto;
+  }
+
+  .slick-list {
+    padding: 100px 0 150px 0 !important;
+  }
+
+  .fancybox-close-small {
+    border: 2px solid #eac335 !important;
+    border-radius: 90px !important;
+    margin: 20px !important;
+  }
+
+  .fancybox-close-small svg {
+    color: #eac335;
+  }
+
+  .fancybox-content {
+    overflow: auto !important;
+  }
+
+  .fancybox-content img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    position: relative;
+    transform: scale(1);
+    width: 100%;
+  }
+
+  .fancybox-content .projects-showcase-description {
+    margin-top: 0px;
+  }
+
+  /* 13. Contact */
+  .contact-icons {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  .contact-types h6 {
+    text-align: left !important;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .contact-types p {
+    text-align: left !important;
+  }
+}
+
+/* Media Queries: 1200 Breakpoint
+ -----------------------------------------------------------------------------*/
+@media (min-width:1200px)
+{
+  /* 02. Navigation */
+  .navbar-brand img {
+    height: 61px;
+    width: 244px;
+  }
+
+  .navbar-nav li {
+  	margin-right: 44px;
+  }
+
+  .navbar-nav li a {
+    padding-top: 14px;
+  }
+
+  .main-menu-contact a {
+    border: 2px solid #ebc435;
+    padding: 12px 18px !important;
+  }
+
+  /* 03. Home - Hero */
+  #home-hero .hero-description,
+  #projects-hero .hero-description {
+    padding: 42px;
+  }
+
+  #home-hero .hero-description h2,
+  #projects-hero .hero-description h2 {
+    font-size: 48px;
+    letter-spacing: 12px;
+  }
+
+  /* 04. Home - Main Services */
+  #main-services .icons {
+    display: inline-block;
+    float: left;
+  }
+
+  #main-services .main-service-contents {
+    margin-left: 20px;
+    width: 70%;
+  }
+
+  /* 05. Home - Projects */
+  #home-projects .home-projects-description,
+  #single-project-gallery .home-projects-description,
+  .what-we-do-gallery .home-projects-description {
+    padding: 32px;
+    width: 460px;
+  }
+
+  #home-projects .home-projects-description h2,
+  #single-project-gallery .home-projects-description h2,
+  .what-we-do-gallery .home-projects-description h2 {
+    margin: 0 0 20px 0;
+  }
+
+  #home-projects .home-projects-description-cta {
+    padding: 30px 0 0 0px;
+  }
+
+  /* 07. Get in Touch */
+  #get-in-touch .get-in-touch-description h2,
+  .h-dark .get-in-touch-description h2 {
+    font-size: 48px;
+  }
+
+  /* 08. Footer */
+  #footer .social-media div {
+    margin-right: 30px;
+  }
+
+  /* 09. Projects */
+  #main-projects #projects-nav,
+  #projects-nav {
+    background: #ebc435;
+    float: left;
+    height: 63px;
+    margin-left: 334px;
+    position: relative;
+    top: -40px;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .projects-images {
+    min-height: 286px;
+  }
+
+  #main-projects .projects-nav li a,
+  .projects-nav li a {
+    font-size: 18px;
+  }
+
+  #main-projects .stripes,
+  #what-we-do-wrapper .stripes {
+    width: 350px;
+  }
+
+  /* 10. What We Do */
+  .what-we-do-gallery .home-projects-description {
+    width: 600px;
+  }
+
+  /* 11. Leaders */
+  .leaders-contents {
+    background: #000 !important;
+    color: #fff;
+  }
+
+  .leaders-contents h6 {
+    font-size: 36px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .leaders-contents .leaders-bio {
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  .leaders-contents .leaders-title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  #main-projects .projects-showcase-wrapper .projects-showcase-images .leaders-images {
+    min-height: 378px;
+  }
+
+  /* 12. Who We Are */
+  #testimonials-slider {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  #testimonials-slider .slick-slide {
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    opacity: .4;
+    outline: none;
+    transform: scale(.8);
+    transition: all 600ms ease;
+  }
+
+  #testimonials-slider .slick-center {
+    -ms-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    outline: none;
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-logo img {
+    height: 36px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-description {
+    font-size: 16px;
+    padding: 20px 42px 0 42px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-quotes img {
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    padding: 20px 0 0px 0;
+    transform: scale(.7);
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-who {
+    font-size: 18px;
+    margin: 20px 50px 10px 50px;
+    padding: 20px 0 10px 20px;
+  }
+
+  .slick-list {
+    padding: 50px 0 75px 0 !important;
+  }
+
+  .fancybox-close-small {
+    border: 2px solid #eac335 !important;
+    border-radius: 90px !important;
+    margin: 20px !important;
+  }
+
+  .fancybox-close-small svg {
+    color: #eac335;
+  }
+
+  .fancybox-content {
+    overflow: auto !important;
+  }
+
+  .fancybox-content img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    position: relative;
+    transform: scale(1);
+  }
+
+  .fancybox-content .projects-showcase-description {
+    margin-top: 0px;
+  }
+
+  .contact-types h6 {
+    text-align: left !important;
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+/* Media Queries: 1600 Breakpoint
+ -----------------------------------------------------------------------------*/
+@media (min-width:1600px)
+{
+  /* 02. Navigation */
+  .navbar-nav li {
+  	margin-right: 64px;
+  }
+
+  /* 03. Home - Hero */
+  #home-hero .hero-description,
+  #projects-hero .hero-description {
+    padding: 42px;
+  }
+
+  #home-hero .hero-description h2,
+  #projects-hero .hero-description h2 {
+    margin: 0 0 30px 0;
+  }
+
+  #home-hero .hero-description-cta,
+  #projects-hero .hero-description-cta {
+    padding: 30px 0 0 30px;
+  }
+
+  #home-hero .hero-description-cta p,
+  #projects-hero .hero-description-cta p {
+    margin-bottom: 30px;
+  }
+
+  /* 07. Get in Touch */
+  #get-in-touch .get-in-touch-description,
+  .h-dark .get-in-touch-description {
+    padding: 42px;
+  }
+
+  /* 09. Projects */
+  #main-projects .projects-nav li:first-child {
+    /* border-bottom: 4px solid #000; */
+    /* margin-left: -350px; */
+  }
+
+  /* 10. What We Do */
+  .what-we-do-gallery .home-projects-description {
+    width: 800px;
+  }
+
+  /* 12. Who We Are */
+  #testimonials-slider {
+    background: #ebebeb;
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-description {
+    font-size: 18px;
+    padding: 20px 72px 0 72px;
+  }
+
+  #testimonials-slider .testimonial-single .testimonial-wrapper .testimonial-quotes img {
+    padding: 40px 0 20px 0;
+  }
+
+  .slick-list {
+    padding: 100px 0 150px 0 !important;
+  }
+
+  .fancybox-content {
+    overflow: initial !important;
+  }
+
+  .fancybox-content img {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    position: relative;
+    left: -50px;
+    transform: scale(1.25);
+    top: 50px;
+  }
+
+  .fancybox-content .projects-showcase-description {
+    margin-top: 110px;
+  }
+}
