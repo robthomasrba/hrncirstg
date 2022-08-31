@@ -12,7 +12,7 @@ if ( have_posts() ) :
 		the_post();
 			$hero_image = get_the_post_thumbnail_url(get_the_ID(),'full');
 ?>
-<div id="projects-hero" data-parallax="scroll" data-image-src="<?php echo $hero_image; ?>">
+<div style="background-image: url(<?php echo $hero_image; ?>);" id="projects-hero">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 d-block d-sm-block d-md-none d-lg-none d-xl-none">
@@ -139,7 +139,7 @@ if ( have_posts() ) :
 		        <div class="home-projects-description-cta">
 		          <button class="shutter-in-horizontal"><a href="/contact">Get In Touch</a></button>
 		        </div>
-						<div class="project-slider-navigation">
+						<!--<div class="project-slider-navigation">
 							<div class="prev construction-prev">
 								<img src="<?php bloginfo( 'template_directory' ); ?>/images/left-arrow-line-symbol.svg" />
 							</div>
@@ -147,7 +147,7 @@ if ( have_posts() ) :
 								<img src="<?php bloginfo( 'template_directory' ); ?>/images/right-arrow-line-symbol.svg" />
 							</div>
 							<div id="scheduling-description-top"></div>
-						</div>
+						</div>-->
 					</div>
 					<div id="construction-gallery-slider">
 						<?php
@@ -214,7 +214,7 @@ if ( have_posts() ) :
 						<div class="home-projects-description-cta">
 							<button class="shutter-in-horizontal"><a href="/contact">Get In Touch</a></button>
 						</div>
-						<div class="project-slider-navigation">
+						<!--<div class="project-slider-navigation">
 							<div class="prev scheduling-prev">
 								<img src="<?php bloginfo( 'template_directory' ); ?>/images/left-arrow-line-symbol.svg" />
 							</div>
@@ -222,7 +222,7 @@ if ( have_posts() ) :
 								<img src="<?php bloginfo( 'template_directory' ); ?>/images/right-arrow-line-symbol.svg" />
 							</div>
 							<div id="safety-description-top"></div>
-						</div>
+						</div>-->
 					</div>
 					<div id="scheduling-gallery-slider"><?php
 					$scheduling_query_args = array(

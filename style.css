@@ -2442,6 +2442,8 @@ div#testimonials-container {
     letter-spacing: 10px;
   }
 
+  #main-projects .projects-showcase-wrapper .projects-showcase-description h6:hover { color: #ebc435 !important; }
+
   #main-projects .projects-showcase-wrapper .projects-showcase-images {
     margin-right: 32px;
   }

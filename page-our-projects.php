@@ -32,11 +32,8 @@ if ( have_posts() ) :
       <span class="navbar-toggler-icon"></span>
     </button>
 		<div class="navbar-collapse collapse" id="projects-nav">
-      <ul class="navbar-nav">
-      	<li class="nav-item active">
-        	<a class="nav-link" data-filter="all" id="all">All Projects</a>
-        </li>
-        <li class="nav-item">
+      	<ul class="navbar-nav">
+        <li class="nav-item active">
         	<a class="nav-link nav-link-tenant" data-filter=".tenant-spaces" id="tenant-spaces">Tenant Spaces</a>
         </li>
         <li class="nav-item">
@@ -45,18 +42,15 @@ if ( have_posts() ) :
         <li class="nav-item">
           <a class="nav-link nav-link-special" data-filter=".special-projects" id="special-projects">Special Projects</a>
         </li>
-			</ul>
+		</ul>
     </div>
 	</nav>
 	<div class="container">
 		<div class="row main-projects-title">
 			<div class="col-lg-12">
 <!-- 					<h2>All Projects</h2> -->
-					<div id="cat-all" class="active-cc cat-content">
-						<h2><?php echo get_field('all_heading'); ?></h2>
-						<p><?php echo get_field('all_description'); ?></p> 
-					</div>
-					<div id="cat-tenant-spaces" class="cat-content">
+					
+					<div id="cat-tenant-spaces" class="active-cc cat-content">
 						<h2><?php echo get_field('tenant_spaces_heading'); ?></h2>
 						<p><?php echo get_field('tenant_spaces_description'); ?></p> 
 					</div>

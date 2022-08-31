@@ -9,7 +9,9 @@
         </div>
         <div class="col-lg-4 main-service-01 fade-bottom-up">
           <div class="icons">
-            <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-tenant-improvements.svg" />
+            <a href="<?php the_field('intro_section_service_2_icon_link'); ?>">
+              <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-tenant-improvements.svg" />
+            </a>
           </div>
           <div class="main-service-contents home-intro-service">
             <h3><?php the_field('intro_section_service_1_title'); ?></h3>
@@ -19,7 +21,10 @@
         </div>
         <div class="col-lg-4 main-service-02 fade-bottom-up">
           <div class="icons">
-            <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-capital-improvements.svg" />
+            <a href="<?php the_field('intro_section_service_2_icon_link'); ?>">
+            <img src="<?php bloginfo( 'template_directory' ); ?>//images/icon-capital-improvements.svg" />
+            </a>
+            
           </div>
           <div class="main-service-contents home-intro-service">
             <h3><?php the_field('intro_section_service_2_title'); ?></h3>
@@ -29,7 +34,9 @@
         </div>
         <div class="col-lg-4 main-service-03 fade-bottom-up">
           <div class="icons">
+            <a href="<?php the_field('intro_section_service_3_icon_link'); ?>">
             <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-special-projects.svg" />
+            </a>
           </div>
           <div class="main-service-contents home-intro-service">
             <h3><?php the_field('intro_section_service_3_title'); ?></h3>
