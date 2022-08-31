@@ -66,6 +66,7 @@ if ( have_posts() ) :
 	<div id="preconstruction-gallery" class="container-fluid">
 		<div class="row">
 			<div class="col-lg-10">
+				
 				<div class="what-we-do-gallery preconstruction-gallery">
 					<div class="slider-border-right"></div>
 					<div class="home-projects-description project-fade-right-to-left">
@@ -87,25 +88,20 @@ if ( have_posts() ) :
 						</div>
 					</div>
 			  	<div id="preconstruction-gallery-slider">
-						<?php
-						$images = get_attached_media( 'image', get_the_ID() );
-						if ( $images )
-						{
-							// Remove the featured image from the images array
-							$featured_image_id = get_post_thumbnail_id();
-
-							if ( has_post_thumbnail() ) {
-								unset($images[ $featured_image_id ]);
-							}
-
-							foreach ($images as $image) {
-								$image_title = $image->post_title;
-								$image_html = wp_get_attachment_image($image->ID, 'large');
-								$image_url = wp_get_attachment_url($image->ID, false); ?>
-						<div class="single-project-gallery-images" style="background-image: url(<?php echo $image_url; ?>);">
-						</div><?php
-							}
-						} ?>
+				  <?php 
+					$wva_video = get_field('preconstruction_video_link');
+					$wva_video_link = $wva_video['video_ink'];
+					if($wva_video_link):
+					?>
+					<div class="who-we-are-video-player" style="background: #000; height: 600px; min-height: 600px;">
+						<div class='embed-container'>
+							<iframe src='<?php echo $wva_video_link; ?>' frameborder='0' allow='autoplay'webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							
+						</div>
+					</div>
+					<?php
+					endif;
+					?>
 					</div>
 				</div>
 			</div>
@@ -290,48 +286,22 @@ if ( have_posts() ) :
 						<div class="home-projects-description-cta">
 							<button class="shutter-in-horizontal"><a href="/contact">Get In Touch</a></button>
 						</div>
-						<div class="project-slider-navigation">
-							<div class="prev safety-prev">
-								<img src="<?php bloginfo( 'template_directory' ); ?>/images/left-arrow-line-symbol.svg" />
-							</div>
-							<div class="next safety-next">
-								<img src="<?php bloginfo( 'template_directory' ); ?>/images/right-arrow-line-symbol.svg" />
-							</div>
+					
+					</div>
+					<div id="safety-gallery-slider">
+					<?php 
+					$wva_video = get_field('safety_video_link');
+					$wva_video_link = $wva_video['video_ink'];
+					if($wva_video_link):
+					?>
+					<div class="who-we-are-video-player" style="background: #000; height: 600px; min-height: 600px;">
+						<div class='embed-container'>
+							<iframe src='<?php echo $wva_video_link; ?>' frameborder='0' allow='autoplay'webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 						</div>
 					</div>
-					<div id="safety-gallery-slider"><?php
-					$safety_query_args = array(
-						'post_type' => 'page',
-						'pagename' => 'Safety Approach',
-						'posts_per_page' => 1
-					);
-
-					$safety_query = new WP_Query($safety_query_args);
-
-					while ($safety_query->have_posts()) :
-						$safety_query->the_post(); // echo get_the_ID();
-
-						$images = get_attached_media( 'image', get_the_ID() );
-						if ( $images )
-						{
-							// Remove the featured image from the images array
-							$featured_image_id = get_post_thumbnail_id();
-
-							if ( has_post_thumbnail() ) {
-								unset($images[ $featured_image_id ]);
-							}
-
-							foreach ($images as $image) {
-								$image_title = $image->post_title;
-								$image_html = wp_get_attachment_image($image->ID, 'large');
-								$image_url = wp_get_attachment_url($image->ID, false); ?>
-						<div class="single-project-gallery-images" style="background-image: url(<?php echo $image_url; ?>);">
-						</div><?php
-							}
-						}
-					endwhile;
-					wp_reset_postdata();
-					wp_reset_query(); ?>
+					<?php
+					endif;
+					?>
 					</div>
 				</div>
 			</div>

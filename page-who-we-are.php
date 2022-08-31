@@ -89,6 +89,22 @@ if ( have_posts() ) :
 										</div>
 									</div>
 									<div class="col-lg-8 leaders-bio">
+
+									<?php if ( have_rows( 'links' ) ) : ?>
+										<p class="social-links">
+										<?php while ( have_rows( 'links' ) ) : the_row(); ?>
+											<a href="<?php the_sub_field( 'url_link' ); ?>" target="_blank">
+											<?php $icon = get_sub_field( 'icon' ); ?>
+											<?php if ( $icon ) : ?>
+												<img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" height="24" width="24" />
+											<?php endif; ?>
+											</a>
+										<?php endwhile; ?>
+										</p>
+									<?php else : ?>
+										<?php // No rows found ?>
+									<?php endif; ?>												
+										
 										<?php the_content(); ?>
 									</div>
 								</div>

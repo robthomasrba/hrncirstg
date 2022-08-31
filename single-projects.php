@@ -43,7 +43,7 @@ if($single_image):
 </div>
 <?php endif; ?>
 
-<!-- <div id="single-project-gallery"><?php
+ <div id="single-project-gallery"><?php
 	$images = get_attached_media( 'image', get_the_ID() );
 	if ( $images )
 	{
@@ -76,7 +76,7 @@ if($single_image):
 </div><?php
 	endwhile;
 endif;
-?> -->
+?>
 <?php
 $git_image = get_field('get_in_touch',get_the_ID());
 ?>

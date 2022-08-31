@@ -210,19 +210,19 @@
 			<?php endif; ?>
 
 			<?php if (is_singular( 'projects' )) : ?>
-      $('#single-project-gallery').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerMode: true,
-				focusOnSelect: true,
-				dots: false,
-    		prevArrow: false,
-    		nextArrow: false,
-  			autoplay: false,
-				autoplaySpeed: 2000,
-				prevArrow: $('.prev'),
-      	nextArrow: $('.next')
-      });
+			$('#single-project-gallery').slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						centerMode: true,
+						focusOnSelect: true,
+						dots: false,
+					prevArrow: false,
+					nextArrow: false,
+					autoplay: false,
+						autoplaySpeed: 2000,
+						prevArrow: $('.prev'),
+				nextArrow: $('.next')
+			});
 			<?php endif; ?>
 
 			<?php if (is_page( 'what-we-do' )) : ?>
@@ -282,6 +282,20 @@
 				autoplaySpeed: 2000,
 				prevArrow: $('.safety-prev'),
       	nextArrow: $('.safety-next')
+      });
+
+	  $('#preconstruction-gallery-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: false,
+				focusOnSelect: true,
+				dots: false,
+    		prevArrow: false,
+    		nextArrow: false,
+  			autoplay: false,
+				autoplaySpeed: 2000,
+				prevArrow: $('.preconstruction-prev'),
+      	nextArrow: $('.preconstruction-next')
       });
 			<?php endif; ?>
 
@@ -425,6 +439,12 @@
 			.addTo(controller);
 
 			$('.tnp-email').attr('placeholder', 'YOUR EMAIL ADDRESS');
+		});
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			delay: 3000,
 		});
 	</script>
 </body>

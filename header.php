@@ -28,6 +28,8 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="stylesheet" type="text/css" media="all" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!-- Main navigation: Start -->
@@ -81,7 +83,7 @@
 				<div class="col-12 d-block d-sm-block d-md-none d-lg-none d-xl-none">
 					<img class="img-fluid " src="<?php the_field('hero_image'); ?>" />
 				</div>
-	      <div class="col-lg-7 hero-description fade-left-to-right">
+	      <div data-aos="fade-up" class="col-lg-7 hero-description fade-left-to-right">
 	        <h2><?php the_field('hero_title'); ?></h2>
 					<div class="hero-description-cta">
 		        <p><?php the_field('hero_description'); ?></p>
